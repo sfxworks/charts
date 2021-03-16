@@ -30,9 +30,9 @@ limitrange:
 imageCredentials:
   # imageCredentials.registry -- Pull secret registry
   registry: quay.io
-  # imageCredentials.registry -- Pull secret username
+  # imageCredentials.username -- Pull secret username
   username: someone
-  # imageCredentials.registry -- Pull secret password
-  password: sillyness
-  # imageCredentials.registry -- Pull secret email
+  # imageCredentials.password -- Pull secret password
+  password: password
+  # imageCredentials.email -- Pull secret email
   email: someone@host.com

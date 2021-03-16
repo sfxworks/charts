@@ -12,10 +12,10 @@ Current chart version is `0.1.0`
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
-| imageCredentials.email | string | `"someone@host.com"` |  |
-| imageCredentials.password | string | `"sillyness"` |  |
-| imageCredentials.registry | string | `"quay.io"` | Pull secret email |
-| imageCredentials.username | string | `"someone"` |  |
+| imageCredentials.email | string | `"someone@host.com"` | Pull secret email |
+| imageCredentials.password | string | `"password"` | Pull secret password |
+| imageCredentials.registry | string | `"quay.io"` | Pull secret registry |
+| imageCredentials.username | string | `"someone"` | Pull secret username |
 | limitrange.limit.cpu | int | `250` | The maximum amount of cpu a container can use. |
 | limitrange.limit.memory | int | `256` | The maximum amount of memory a container can use. |
 | limitrange.request.cpu | int | `100` | The minimum amount of memory a container can request. New containers will default to this value. |
