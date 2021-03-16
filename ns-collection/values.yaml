@@ -1,0 +1,38 @@
+# namespace -- The namespace to create
+namespace: small-non-prod-ns
+quota:
+  request:
+    # quota.request.cpu -- The limit for the total sum of CPU request in mCPU for the namespace.
+    cpu: 500
+    # quota.request.memory -- The limit for the tototaltoal sum of memory request in Mi for the namespace.
+    memory: 640
+  limit:
+    # quota.limit.cpu -- The limit for the total sum of CPU to be used in mCPU for the namespace.
+    cpu: 1250
+    # quota.limit.memory -- The limit for the total sum of memory to be used in Mi for the namespace.
+    memory: 1280
+    # quota.limit.pods -- The limit for the total sum of pods that can be created for the namespace..
+    pods: 10
+    # quota.limit.services -- The limit for the total sum of services that can be created for the namespace.
+    services: 5
+limitrange:
+  request:
+    # limitrange.request.cpu -- The minimum amount of mCPU a container can request. New containers will default to this value.
+    cpu: 100
+    # limitrange.request.cpu -- The minimum amount of memory a container can request. New containers will default to this value.
+    memory: 128
+  limit:
+    # limitrange.limit.cpu -- The maximum amount of cpu a container can use.
+    cpu: 250
+    # limitrange.limit.memory -- The maximum amount of memory a container can use.
+    memory: 256
+
+imageCredentials:
+  # imageCredentials.registry -- Pull secret registry
+  registry: quay.io
+  # imageCredentials.registry -- Pull secret username
+  username: someone
+  # imageCredentials.registry -- Pull secret password
+  password: sillyness
+  # imageCredentials.registry -- Pull secret email
+  email: someone@host.com

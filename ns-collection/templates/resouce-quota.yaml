@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: resource-quota
+spec:
+  hard:
+    requests.cpu: {{.Values.quota.request.cpu}}m
+    requests.memory: {{.Values.quota.request.memory}}Mi
+    limits.cpu: {{.Values.quota.limit.cpu}}m
+    limits.memory: {{.Values.quota.limit.memory}}Mi
+    services: {{.Values.quota.limit.services}}
+    pods: {{.Values.quota.limit.pods}}
